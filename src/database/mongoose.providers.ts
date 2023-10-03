@@ -1,4 +1,4 @@
-import * as mongoose from 'mongoose';
+import * as mongoose from 'mongoose'
 
 export const databaseProviders = [
   {
@@ -6,4 +6,4 @@ export const databaseProviders = [
     useFactory: async (): Promise<typeof mongoose> =>
       await mongoose.connect(process.env.MONGODB_URI),
   },
-];
+]
